@@ -59,7 +59,7 @@ namespace Laboratorio_04_Juan_Roncagliolo
                     almacenamiento.Piezas_enviadas = rnd.Next(0, almacenamiento.Piezas_almacenadas);
                     almacenamiento.Piezas_almacenadas -= almacenamiento.Piezas_enviadas;
                     almacenamiento.Memoria += almacenamiento.Piezas_enviadas;
-                    a = "|     " + almacenamiento.Reinicio() + "    |  " + almacenamiento.Hora.ToString("00") + "  |";
+                    a = "|     " + almacenamiento.Reinicio(almacenamiento.Nombre) + "    |  " + almacenamiento.Hora.ToString("00") + "  |";
                     almacenamiento.Registro.Add(a);
                     return a;
                 }

@@ -51,7 +51,7 @@ namespace Laboratorio_04_Juan_Roncagliolo
                 {
                     ensamblaje.Objetos_enviados = ensamblaje.Piezas_recibidas/4;
                     ensamblaje.Memoria += ensamblaje.Objetos_enviados;
-                    a = "|  " + ensamblaje.Reinicio() + "  |  " + ensamblaje.Hora.ToString("00") + "  |";
+                    a = "|  " + ensamblaje.Reinicio(ensamblaje.Nombre) + "  |  " + ensamblaje.Hora.ToString("00") + "  |";
                     ensamblaje.Registro.Add(a);
                     return a;
                 }

@@ -51,7 +51,7 @@ namespace Laboratorio_04_Juan_Roncagliolo
                 {
                     verificacion.Objetos_enviados = verificacion.Objetos_recibidos ;
                     verificacion.Memoria += verificacion.Objetos_enviados;
-                    a = "|   " + verificacion.Reinicio() + "  |  " + verificacion.Hora.ToString("00") + "  |";
+                    a = "|   " + verificacion.Reinicio(verificacion.Nombre) + "  |  " + verificacion.Hora.ToString("00") + "  |";
                     verificacion.Registro.Add(a);
                     return a;
                 }

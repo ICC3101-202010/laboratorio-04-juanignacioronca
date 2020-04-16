@@ -51,7 +51,7 @@ namespace Laboratorio_04_Juan_Roncagliolo
                 {
                     empaque.Productos_enviados = empaque.Objetos_recibidos ;
                     empaque.Memoria += empaque.Productos_enviados;
-                    a = "|" + empaque.Reinicio() + "|  " + empaque.Hora.ToString("00") + "  |";
+                    a = "|" + empaque.Reinicio(empaque.Nombre) + "|  " + empaque.Hora.ToString("00") + "  |";
                     empaque.Registro.Add(a);
                     return a;
                 }

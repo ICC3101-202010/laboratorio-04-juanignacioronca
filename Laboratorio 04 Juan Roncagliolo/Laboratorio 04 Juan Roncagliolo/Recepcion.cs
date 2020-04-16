@@ -51,7 +51,7 @@ namespace Laboratorio_04_Juan_Roncagliolo
                 else
                 {
                     recepcion.Piezas_enviadas = recepcion.Piezas_recibidas;
-                    a = "| " + recepcion.Reinicio() + " |  " + recepcion.Hora.ToString("00") + "  |";
+                    a = "| " + recepcion.Reinicio(recepcion.Nombre) + " |  " + recepcion.Hora.ToString("00") + "  |";
                     recepcion.Registro.Add(a);
                     return a;
                 }
