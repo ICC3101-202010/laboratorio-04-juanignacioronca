@@ -11,11 +11,12 @@ namespace Laboratorio_04_Juan_Roncagliolo
         public int Memoria;
         public string Estado;
         public int Hora;
+        public List<string> Registro = new List<string>();
 
         public string Encendido()
         {
             Estado = "Encendido";
-            return "Maquina encendida";
+            return "Maquina  Encendida";
         }
         public string Reinicio()
         {
@@ -23,15 +24,11 @@ namespace Laboratorio_04_Juan_Roncagliolo
             Encendido();
             return "Maquina Reiniciada";
         }
-    public string Apagado()
+        public string Apagado()
         {
             Memoria = 0;
             Estado = "Apagada";
-            return "Maquina apagada";
-        }
-        public void Guardar_informacion()
-        {
-
+            return "Maquina  Apagada";
         }
 
     }
