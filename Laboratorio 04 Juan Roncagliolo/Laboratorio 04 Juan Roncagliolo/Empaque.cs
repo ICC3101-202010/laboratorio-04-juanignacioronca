@@ -38,7 +38,6 @@ namespace Laboratorio_04_Juan_Roncagliolo
             string a;
             if (empaque.Estado == "Encendido")
             {
-                Random rnd = new Random();
                 if (empaque.Memoria < 800)
                 {
                     empaque.Productos_enviados = empaque.Objetos_recibidos;

@@ -38,7 +38,6 @@ namespace Laboratorio_04_Juan_Roncagliolo
             string a;
             if (ensamblaje.Estado == "Encendido")
             {
-                Random rnd = new Random();
                 if (ensamblaje.Memoria < 500)
                 {
                     ensamblaje.Objetos_enviados = ensamblaje.Piezas_recibidas/4;

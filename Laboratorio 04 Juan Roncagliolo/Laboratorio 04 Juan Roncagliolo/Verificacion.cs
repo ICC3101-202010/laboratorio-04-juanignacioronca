@@ -38,7 +38,6 @@ namespace Laboratorio_04_Juan_Roncagliolo
             string a;
             if (verificacion.Estado == "Encendido")
             {
-                Random rnd = new Random();
                 if (verificacion.Memoria < 500)
                 {
                     verificacion.Objetos_enviados = verificacion.Objetos_recibidos ;
